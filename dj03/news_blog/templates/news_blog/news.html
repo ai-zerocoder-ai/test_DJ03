@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Blog</title>
+</head>
+<body>
+    <h1>Новости</h1>
+    {% for news in news_posts %}
+        <div>
+            <h2>{{ news.title }}</h2>
+            <p><strong>Автор:</strong> {{ news.author }}</p>
+            <p><strong>Дата публикации:</strong> {{ news.pub_date }}</p>
+            <p>{{ news.short_description }}</p>
+            <a href="#">Читать далее</a>
+        </div>
+        <hr>
+    {% endfor %}
+</body>
+</html>
