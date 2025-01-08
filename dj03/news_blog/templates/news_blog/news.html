@@ -12,8 +12,8 @@
             <h2>{{ news.title }}</h2>
             <p><strong>Автор:</strong> {{ news.author }}</p>
             <p><strong>Дата публикации:</strong> {{ news.pub_date }}</p>
-            <p>{{ news.short_description }}</p>
-            <a href="#">Читать далее</a>
+            <p><strong>Краткое описание:</strong> {{ news.short_description }}</p>
+            <p><strong>Полный текст:</strong> {{ news.text }}</p>
         </div>
         <hr>
     {% endfor %}
